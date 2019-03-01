@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 20s infinite;
+}
+
+.content {
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.content-text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.content-text h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 20px;
+}
+
+.about {
+    background-image: url(../images/IMG_20171123_201744438.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    padding: 5% 10% 5% 50%;
+}
+
+.about h2 {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.about p {
+    text-align: left;
+    color: #ffffff;
+}
+
+section {
+    background-color:rgb(51, 50, 50);
+}
+
+.photos {
+    padding: 20px 0px 40px 0px;
+}
+
+.photos h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.photo-container {
+    padding:0px 50px 0px 50px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+}
+
+.card img {
+    padding:5px;
+}
+
+.card p {
+    margin-bottom: 5px;
+}
+
+.photo-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-row > div {
+    margin: 10px;
+}
+
+.footer {
+    padding:60px 30px 30px 30px; 
+    background-color:rgb(15, 15, 15);
+}
+
+.footer p {
+    text-align: center;
+    color: #ffffff;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(../images/slide1.jpg);
+    }
+    20%{
+        background-image: url(../images/slide1.jpg);
+    }
+    20.01% {
+        background-image: url(../images/slide2.jpg);
+    }
+    40%{
+        background-image: url(../images/slide2.jpg);
+    }
+    40.01% {
+        background-image: url(../images/slide3.jpg);
+    }
+    60%{
+        background-image: url(../images/slide3.jpg);
+    }
+    60.01% {
+        background-image: url(../images/slide4.jpg);
+    }
+    80%{
+        background-image: url(../images/slide4.jpg);
+    }
+    80.01% {
+        background-image: url(../images/slide5.jpg);
+    }
+    100%{
+        background-image: url(../images/slide5.jpg);
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .content-text h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .text-content p {
+        font-size: 15px;
+    }
+
+    .about {
+        padding: 5% 4% 5% 4%;
+    }
+
+    .photo-container {
+        padding: 0px;
+    }
+
+    .photo-row > div {
+        margin: 10px 0px;
+    }
+}
