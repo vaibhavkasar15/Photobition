@@ -44,7 +44,7 @@ body {
     background-image: url(../images/IMG_20171123_201744438.jpg);
     background-size: cover;
     background-position: right;
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding: 4% 10% 5% 50%;
     font-family: serif;
